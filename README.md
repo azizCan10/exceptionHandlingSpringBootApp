@@ -1,9 +1,5 @@
 ## Exception Handling Spring Boot App
 
-Written with Java-Spring Boot
-
-PostgreSQL used
-
 **Technologies**
 
 * Java - Spring Boot
@@ -17,6 +13,8 @@ PostgreSQL used
 * Name must not be null
 * Age must be greater than 0
 * Age must not be null
+
+<hr>
 
 java/src/main/resources/application.properties on line 10 and 11;
 
