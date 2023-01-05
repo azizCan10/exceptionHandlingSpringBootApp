@@ -1,18 +1,22 @@
-## exceptionHandlingSpringBootApp
+## Exception Handling Spring Boot App
 
 Written with Java-Spring Boot
 
 PostgreSQL used
 
+**Technologies**
+
+* Java - Spring Boot
+* Spring Data JPA
+* Lombok
+* PostgreSQL
+
 **Validations**
 
-> UserNotFound by id
-
-> Name must not be null
-
-> Age must be greater than 0
-
-> Age must not be null
+* UserNotFound by id
+* Name must not be null
+* Age must be greater than 0
+* Age must not be null
 
 java/src/main/resources/application.properties on line 10 and 11;
 
