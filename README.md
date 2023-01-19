@@ -9,7 +9,7 @@
 
 **Validations**
 
-* UserNotFound by id
+* UserNotFound
 * Name must not be null
 * Age must be greater than 0
 * Age must not be null
