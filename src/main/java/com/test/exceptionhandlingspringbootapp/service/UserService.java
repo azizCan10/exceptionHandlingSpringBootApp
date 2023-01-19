@@ -5,7 +5,8 @@ import com.test.exceptionhandlingspringbootapp.core.result.Result;
 import com.test.exceptionhandlingspringbootapp.core.result.SuccessDataResult;
 import com.test.exceptionhandlingspringbootapp.core.result.SuccessResult;
 import com.test.exceptionhandlingspringbootapp.entity.User;
-import com.test.exceptionhandlingspringbootapp.exception.UserNotFoundException;
+import com.test.exceptionhandlingspringbootapp.exception.CustomException;
+import com.test.exceptionhandlingspringbootapp.exception.ErrorStatus;
 import com.test.exceptionhandlingspringbootapp.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -30,7 +31,7 @@ public class UserService {
     public DataResult<User> getById(long id) {
         return new SuccessDataResult<>(userRepository.findById(id)
                 .orElseThrow(
-                        () -> new UserNotFoundException("User couldn't find by id: " + id)), "User listed.");
+                        () -> new CustomException(ErrorStatus.USER_NOT_FOUND)), "User listed.");
     }
 
     public Result delete(long id) {
